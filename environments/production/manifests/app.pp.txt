@@ -1,0 +1,44 @@
+node 'node1' {
+
+
+  include tomcat
+
+  include prefs
+
+  
+}
+
+
+
+node 'node2' {
+
+
+  include tomcat
+
+
+  
+}
+
+
+
+node default {
+
+
+
+  notify {"checkpoint_1":
+
+    message => "
+
+         
+         ***** DEFAULT BLOCK *****
+
+         There is no definition for this node
+
+         
+  
+        "
+
+    }
+
+  
+}

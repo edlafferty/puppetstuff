@@ -1,0 +1,31 @@
+# System-wide configuration file for tomcat services                                                                 
+# This will be sourced by tomcat and any secondary service                                                           
+# Values will be overridden by service-specific configuration                                                        # files in /etc/sysconfig                                                                                            
+#                                                                                                                    
+# Use this one to change default values for all services                                                             
+# Change the service specific ones to affect only one service                                                        
+# (see, for instance, /etc/sysconfig/tomcat)                                                                         
+#                                                                                                                               
+                                                                                                          
+TOMCAT_CFG_LOADED="1"
+JAVA_HOME="/usr/lib/jvm/jre" 
+JAVA_OPTS="-Xms68m -Xmx128m -XX:MaxPermSize=128M -Djava.security.egd=file:/dev/./urandom"
+
+CATALINA_BASE="/usr/share/tomcat"
+CATALINA_HOME="/usr/share/tomcat"
+
+JASPER_HOME="/usr/share/tomcat"
+
+CATALINA_TMPDIR="/var/cache/tomcat/temp"
+JAVA_OPTS="-Xminf0.1 -Xmaxf0.3"
+
+TOMCAT_USER="tomcat"
+
+
+SECURITY_MANAGER="false"
+
+
+SHUTDOWN_WAIT="30"
+SHUTDOWN_VERBOSE="false"
+
+CATALINA_PID="/var/run/tomcat.pid" 
