@@ -1,0 +1,15 @@
+class tomcat {
+
+
+  notify {"***** checkpoint_tomcat_init *****":}
+
+  include java::install
+
+  include tomcat::install
+
+  include tomcat::config
+
+  include tomcat::service
+
+
+}
